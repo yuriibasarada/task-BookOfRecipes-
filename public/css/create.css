@@ -1,0 +1,25 @@
+.form-create input{
+    width: 60%;
+}
+.headerCreate {
+    margin: 2%;
+}
+.iconDelete i {
+    text-align: left;
+    color: #2f0b45;
+}
+.iconDelete:hover i{
+    color: white;
+}
+.saveChanges {
+    text-align: center;
+}
+.additional {
+    margin-top: 4%;
+}
+.newIngredient {
+    text-align: center;
+}
+.notFound {
+    text-align: right;
+}
