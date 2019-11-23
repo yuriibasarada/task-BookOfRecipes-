@@ -41,4 +41,14 @@ abstract class Model extends MapExtAbstract
     {
         return json_decode($this->getData(), true);
     }
+
+    public function foreignKeyOff()
+    {
+        $this->query('SET foreign_key_checks = 0');
+    }
+
+    public function foreignKeyOn()
+    {
+        $this->query('SET foreign_key_checks = 1');
+    }
 }

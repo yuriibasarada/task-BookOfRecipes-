@@ -6,9 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'IwCore\\database\\ext\\Crud' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/database/ext/Crud.php',
-    'IwCore\\database\\ext\\CrudInterface' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/database/ext/CrudInterface.php',
-    'IwCore\\error\\CoreException' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/error/CoreException.php',
     'shApp\\app\\AppAbstract' => $vendorDir . '/yuriyshkvarc/sh-app/shApp/app/AppAbstract.php',
     'shApp\\app\\AppInterface' => $vendorDir . '/yuriyshkvarc/sh-app/shApp/app/AppInterface.php',
     'shApp\\error\\AppException' => $vendorDir . '/yuriyshkvarc/sh-app/shApp/error/AppException.php',
@@ -28,6 +25,9 @@ return array(
     'shCore\\database\\DatabasePdo' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/database/DatabasePdo.php',
     'shCore\\database\\ResultInterface' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/database/ResultInterface.php',
     'shCore\\database\\ResultPdo' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/database/ResultPdo.php',
+    'shCore\\database\\ext\\Crud' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/database/ext/Crud.php',
+    'shCore\\database\\ext\\CrudInterface' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/database/ext/CrudInterface.php',
+    'shCore\\error\\CoreException' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/error/CoreException.php',
     'shCore\\storage\\Storage' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/storage/Storage.php',
     'shCore\\storage\\StorageInterface' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/storage/StorageInterface.php',
     'shCore\\storage\\session\\SessionInterface' => $vendorDir . '/yuriyshkvarc/sh-core/shCore/storage/session/SessionInterface.php',

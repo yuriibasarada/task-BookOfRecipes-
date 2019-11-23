@@ -15,9 +15,6 @@ class ComposerStaticInit960213cbfea09885ab0d3c4aec34bdf5
     );
 
     public static $classMap = array (
-        'IwCore\\database\\ext\\Crud' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/database/ext/Crud.php',
-        'IwCore\\database\\ext\\CrudInterface' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/database/ext/CrudInterface.php',
-        'IwCore\\error\\CoreException' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/error/CoreException.php',
         'shApp\\app\\AppAbstract' => __DIR__ . '/..' . '/yuriyshkvarc/sh-app/shApp/app/AppAbstract.php',
         'shApp\\app\\AppInterface' => __DIR__ . '/..' . '/yuriyshkvarc/sh-app/shApp/app/AppInterface.php',
         'shApp\\error\\AppException' => __DIR__ . '/..' . '/yuriyshkvarc/sh-app/shApp/error/AppException.php',
@@ -37,6 +34,9 @@ class ComposerStaticInit960213cbfea09885ab0d3c4aec34bdf5
         'shCore\\database\\DatabasePdo' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/database/DatabasePdo.php',
         'shCore\\database\\ResultInterface' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/database/ResultInterface.php',
         'shCore\\database\\ResultPdo' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/database/ResultPdo.php',
+        'shCore\\database\\ext\\Crud' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/database/ext/Crud.php',
+        'shCore\\database\\ext\\CrudInterface' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/database/ext/CrudInterface.php',
+        'shCore\\error\\CoreException' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/error/CoreException.php',
         'shCore\\storage\\Storage' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/storage/Storage.php',
         'shCore\\storage\\StorageInterface' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/storage/StorageInterface.php',
         'shCore\\storage\\session\\SessionInterface' => __DIR__ . '/..' . '/yuriyshkvarc/sh-core/shCore/storage/session/SessionInterface.php',

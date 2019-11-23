@@ -11,7 +11,8 @@ document.getElementById('loginSubmit').onclick = async function() {
         if(json.error) {
             alert(json.error)
         } else {
-            document.location.replace("http://task/recipe");
+            localStorage.token = json.token;
+            document.location.replace(`http://task/recipe?token=${localStorage.token}`);
         }
     }
 }

@@ -7,14 +7,6 @@ use shApp\app\AppAbstract;
 class App extends  AppAbstract
 {
     const MAP_DEFAULT = array(
-        '/recipe' => array(
-            0 => 'controller\\Recipe',
-            1 => 'page'
-        ),
-        '/recipe/create' => array(
-            0 => 'controller\\Recipe',
-            1 => 'create'
-        ),
         '/login' => array(
             0 => 'controller\\Login',
             1 => 'login'
@@ -22,6 +14,14 @@ class App extends  AppAbstract
         '/auth' => array(
             0 => 'controller\\Login',
             1 => 'auth'
+        ),
+        '/register' => array(
+            0 => 'controller\\Login',
+            1 => 'register'
+        ),
+        '/logout' => array(
+            0 => 'controller\\Login',
+            1 => 'logout'
         )
     );
 }

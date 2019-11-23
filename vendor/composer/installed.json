@@ -37,12 +37,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yuriyshkvarc/sh-core.git",
-            "reference": "081f279e0b8e23e7ff32f2d2a1d72350c021b9c9"
+            "reference": "a99e2c9b1289341568e77bda2710023df9531852"
         },
         "require": {
             "php": ">=5.6.0"
         },
-        "time": "2019-11-21T16:39:46+00:00",
+        "time": "2019-11-23T09:37:06+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {

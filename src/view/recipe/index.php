@@ -3,9 +3,11 @@
 
 <body>
 <div class="container-fluid center">
-    <div class="addNewRecipe">
-        <button type="button" class="btn btn-success" id="addNewRecipe"><a href="/recipe/create">Add new Recipe</a></button>
+    <div class="addNewRecipe row">
+        <div class="col-md-6"><h1>My Recipes</h1></div>
+        <div class="col-md-6"><button type="button" class="btn btn-success" id="addNewRecipe"><a href="/recipe/create?token=<?=session_id()?>">Add new Recipe</a></button></div>
     </div>
+
     <table class="table">
         <thead>
         <tr>
@@ -18,7 +20,7 @@
         <tbody>
         <?php
         if (!$recipe) {
-            echo "<p>Пока нет рецептов, добавте первый!</p>";
+            echo "<p>No recipes yet, add the first one!</p>";
         }
         foreach ($recipe as $rec) {
             echo "<tr>
@@ -26,9 +28,9 @@
     <td>". $rec['recipe_name'] ."</td>
     <td>". $rec['recipe_description'] ."</td>
     <td class='iconActions'>
-    <a href=''><i class=\"far fa-eye\"></i></a>
-    <a href=''><i class=\"far fa-edit\"></i></a>
-    <a href=''><i class=\"fas fa-ban\"></i></a></td>
+    <a href='/recipe/read/". $rec['recipe_id'] . "?token=". session_id() ."'><i class=\"far fa-eye\"></i></a>
+    <a href='/recipe/edit/". $rec['recipe_id'] . "?token=". session_id() ."'><i class=\"far fa-edit\"></i></a>
+    <a href='#' rel=\"". $rec['recipe_id'] ."\" onclick=\"deleteRecipe(this);\"><i class=\"fas fa-ban\"></i></a></td>
 </tr>";
         }
         ?>

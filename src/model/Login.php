@@ -9,6 +9,7 @@ use core\Model;
 class Login extends Model
 {
     const NAME = 'login';
+    const ROUTE_KEY = 'admin';
 
     public function login(string $login, string $password): array
     {
@@ -45,6 +46,14 @@ class Login extends Model
             );
         }
         return $routes;
+    }
+
+    public function register(array  $data) {
+        return $this->getCrud('user')->create($data)->newId();
+    }
+    public function getDefaultRouteId($name = self::ROUTE_KEY)
+    {
+        return $this->query("SELECT route_id FROM route WHERE route_name = '$name'")->fetchColumn();
     }
 
 }

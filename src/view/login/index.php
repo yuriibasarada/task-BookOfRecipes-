@@ -24,8 +24,8 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="Section1">
                         <form class="form-horizontal">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">username</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1">
+                                <label for="exampleInputLogin">username</label>
+                                <input type="text" class="form-control" id="exampleInputLogin">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
@@ -47,25 +47,21 @@
                         </form>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="Section2">
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">First Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Last Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1">
-                            </div>
+                        <form class="form-horizontal" id="formRegister">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1">
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputLogin">Username</label>
+                                <input type="text" name="name" class="form-control" id="exampleInputLogin">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-default">Sign up</button>
+                                <button type="button" class="btn btn-default" id="registerSubmit">Sign up</button>
                             </div>
                         </form>
                     </div>

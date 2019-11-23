@@ -1,0 +1,24 @@
+.containerwe {
+    position:absolute;
+    width: 400px;
+    height: 200px;
+    color: white;
+    background:  linear-gradient(#2e3a6a,#2f0b45);
+    padding: 20px; margin:auto; left:0px; right:0px; bottom:0px;
+}
+#popUpForm {
+    margin-top: 5%;
+}
+.input-popup {
+    width: 100%!important;
+}
+.input-div-popup {
+    margin-left: 5%;
+}
+.triger_open {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
